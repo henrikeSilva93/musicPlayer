@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&family=Roboto:wght@100;300;400;500&display=swap"
+        rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="player-container">
+        <div class="cover-container">
+            <img
+                src="https://imusic.b-cdn.net/images/item/original/127/0077779797127.jpg?queen-2021-greatest-hits-vol-2-cd&class=scaled" id="album_cover"/>
+        </div>
+        <div class="song-container">
+            <p class="song-title">
+                Tie your mother down
+            </p>
+            <p class="song-artist">
+                Queen
+            </p>
+        </div>
+        <div class="player-buttons">
+            <img src="./assets/rewind.png" id="rewind"/>
+            <img src="./assets/play.png" id="play"/>
+            <img src="./assets/forward.png" id="forward"/>
+        </div>
+        <div class="player-progress">
+            <span class="bar"><span class="fill"></span></span>
+           <input type="range"  class="progress-bar"/>
+            <div class="progress-time">
+                <span class="current-time">00:00</span>
+                <span class="duration">05:36</span>
+            </div>
+        </div>
+        <audio controls id="audio" hidden>
+            <source src="./assets/rosanna - toto.mp3" type="audio/ogg">
+          </audio>
+    </div>
+  
+<script src="./script.js"></script>
+</body>
+
+</html>
