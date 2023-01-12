@@ -30,7 +30,7 @@ const rewind = $('#rewind')[0]
 
 
 let currentSong = 0
-playing = false
+
 
 function audioPlay() {
     audio.src = songs[currentSong].src
